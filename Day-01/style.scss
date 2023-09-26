@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 6px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: linear-gradient(to bottom left, #4DC3C9, #433BA0);
+    color: #333;
+    font-family: 'Courier New', 'Courier', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.number{
+    width: 200px;
+    height: 100px;
+
+    .one-straight{
+        z-index: 10;
+        position: absolute;
+        height: 100px;
+        width: 24px;
+        top:0;
+        background-color: white;
+        border-radius: 3px;
+        box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+    }
+
+    .first-zero,.second-zero{
+        position: absolute;
+        box-sizing: border-box;
+        border: 24px solid white;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        left: 17px;
+        box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+    }
+
+    .first-zero{
+        z-index: 8;
+    }
+
+    .second-zero{
+        z-index: 6;
+        left: 100px; 
+    }  
+}
+
+.one-angle{
+    z-index: 0;
+    position: absolute;
+    height: 40px;
+    width: 20px;
+    top:0;
+    transform: rotate(50deg);
+    left: -16px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+}
+
+.days{
+    line-height: 60px;
+    font-size: 5.125rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.small-text{
+    line-height: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+  
