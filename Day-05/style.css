@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #42A7A1;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 220px;
+  width: 280px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.center .header {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background: #F1BA64;
+  color: #fff;
+}
+.center .header .big {
+  position: absolute;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.center .header .small {
+  position: absolute;
+  font-weight: 400;
+  font-size: 11px;
+}
+.center .header .text {
+  top: 12px;
+  left: 15px;
+}
+.center .header .date {
+  top: 30px;
+  left: 15px;
+}
+.center .header .type {
+  top: 14px;
+  right: 15px;
+}
+.center .header .amount {
+  top: 28px;
+  right: 15px;
+}
+.center .parameter {
+  text-align: right;
+  padding: 10px 0 0 0;
+}
+.center .parameter span {
+  position: relative;
+  font-size: 11px;
+  color: #606060;
+  padding: 0 10px 0 25px;
+}
+.center .parameter span:before {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  display: block;
+  content: "";
+  width: 11px;
+  height: 3px;
+  border-radius: 3px;
+}
+.center .parameter .red:before {
+  background: red;
+}
+.center .parameter .blue:before {
+  background: blue;
+}/*# sourceMappingURL=style.css.map */
