@@ -22,7 +22,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
   
-.center {   
+.center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,7 +83,7 @@
             position: relative;
             font-size: 11px;
             color: #606060;
-            // line-height: 13px;
+            line-height: 13px;
             padding: 0 10px 0 25px;
         }
 
@@ -91,8 +91,8 @@
             position: absolute;
             left: 6px;
             top: 6px;
-            display: block;
             content: '';
+            display: block;
             width: 11px;
             height: 3px;
             border-radius: 3px;
@@ -106,5 +106,47 @@
             background: blue;
         }
     }
+    
+    .statistic {
+        position: relative;
+        height: 81px;
+        width: 260px;
+        margin: 15px auto;
+
+        .line-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px; 
+            background: #F2F2F2;
+        }
+
+        .line-2 {
+            @extend .line-1;
+            top: 40px;
+        }
+
+        .line-3 {
+            @extend .line-1;
+            top: inherit;
+            bottom: 0;
+        }
+    }
+    
+    .days {
+        width: 280px;
+        margin: -15px auto;
+
+        .day {
+            display: block;
+            float: left;
+            width: (100% / 7);
+            font-size: 9px;
+            color: #949494;
+            line-height: 30px;
+            text-transform: uppercase;
+            text-align: center;
+        } 
+    }
 }
-  
