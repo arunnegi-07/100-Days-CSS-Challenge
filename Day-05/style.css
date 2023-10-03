@@ -76,14 +76,15 @@
   position: relative;
   font-size: 11px;
   color: #606060;
+  line-height: 13px;
   padding: 0 10px 0 25px;
 }
 .center .parameter span:before {
   position: absolute;
   left: 6px;
   top: 6px;
-  display: block;
   content: "";
+  display: block;
   width: 11px;
   height: 3px;
   border-radius: 3px;
@@ -93,4 +94,39 @@
 }
 .center .parameter .blue:before {
   background: blue;
+}
+.center .statistic {
+  position: relative;
+  height: 81px;
+  width: 260px;
+  margin: 15px auto;
+}
+.center .statistic .line-1, .center .statistic .line-3, .center .statistic .line-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #F2F2F2;
+}
+.center .statistic .line-2 {
+  top: 40px;
+}
+.center .statistic .line-3 {
+  top: inherit;
+  bottom: 0;
+}
+.center .days {
+  width: 280px;
+  margin: -15px auto;
+}
+.center .days .day {
+  display: block;
+  float: left;
+  width: 14.2857142857%;
+  font-size: 9px;
+  color: #949494;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
